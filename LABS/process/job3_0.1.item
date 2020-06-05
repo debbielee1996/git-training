@@ -144,7 +144,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_2"/>
   </node>
-  <node componentName="tPigStoreResult" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+  <node componentName="tPigStoreResult" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPigStoreResult_1"/>
     <elementParameter field="HADOOP_LIBRARIES" name="PIG" value=""/>
     <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
@@ -178,7 +178,18 @@
     <elementParameter field="TABLE" name="DRIVER_JAR"/>
     <elementParameter field="CHECK" name="DEFINE_REGISTER_JAR" show="false" value="false"/>
     <elementParameter field="LABEL" name="REGISTER_JAR_NOTE" show="false" value="When filling in the Jar path information below, make sure that the JAR files are available on the execution server.&#10;&#9;&#9;&#9;"/>
-    <elementParameter field="TABLE" name="REGISTER_JAR" show="false"/>
+    <elementParameter field="TABLE" name="REGISTER_JAR" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="datanucleus-core"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datanucleus-rdbms"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hcatalog"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hive-exec"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hive-metastore"/>
+      <elementValue elementRef="JAR_PATH" value=""/>
+    </elementParameter>
     <elementParameter field="TABLE" name="HBASESTORAGE_PARAMETER" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tPigStoreResult_1"/>
@@ -206,13 +217,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_53849232-861b-42de-ba25-73ca6d06b4c4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G6J+J9drGdtVTuPlDoTlGs4b6lHdyNhplLBrK2lHeIvC7rgxWZN2yCHDTNyJ70iY06Ag/OLhjhau
-CBzdBCNnLQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_678ca0b7-1354-4562-a3ec-a46f2ecbc529"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>d9TnuANIP0wjY0Z0/zRGPgA4Q1CtT+mro0iXktkmSdNpyRsSDiWXFvVxl2aQ+5gTk3ykZSKn7Wxw
-zMPDKym7Rw==</DigestValue></Reference></SignedInfo><SignatureValue>PKvQwWdaeJWp8kSKzwKU3NWIA/wQJGsQ1HA/DMHnZWalhjvsARSYkOHkprMIGNgXUs8EM6RO8ey6
-mtPaK+8RjERTBrgHoUn8b551iS90YitF2tjseKYP3Us366KccDLUDXZ6hMgmgvBX82+Uu3qQQi6s
-S/Soh26X+v9Q5jYX8DdM7JfYXhcVQ12LEuLn7e98GqIb88NE9Ru8yyCIzqdT6WYff9FLUTOHtqNw
-y222/EBvRFhIW9gOf3pqB4J4HOzdSyeJXQDi5lM7K4oBJVJ1frF9sh+Jsx1QBZIrM8lH0PU6dA08
-xMV44qrgdPr8AUNSPQfHvUpDSGs4Zxci1UjuCg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0ad17f44-46fc-4f66-a8b7-3690627aa7c9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+WnqkXxR2AlCMCWJ+nlxb72s3y4+AskNvIPncu7e8D4qHvGCY7HZkzNMp/zBdkko3zU+6SskdP/5
+caclqzOiYw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6acdcc1e-18bc-4a1a-ad27-823456b384d7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Kc5L2NAi5Su/NdvogdemGtbOYBGNs2SMRN3Mgen4SnGmkpJUziTGuDWQH9DRg/IMEqYlePBAmmpB
+mr/3u3Udnw==</DigestValue></Reference></SignedInfo><SignatureValue>hE5PJgieMCH2g60Z6ddh74W891tzVuN61buuhMbY7/daddJQXn3eHnic68+BMxhSbLPPmKd8bgMu
+b7eTI0JVsnEIAjd01p2c0Nlm+Z8sGU1pnNdz/iJMd+2Q7iPd2EDKZdZJLBP8BVN3P8ZKTXHNZS3E
+zClH9ClgHH0I5TEAIcZBk5NcphoanPPenXPjpJb1OktWLWnnJhq6qKkH3P66zxiIZHfV6aL7Icvo
+mae4/PX5jHuRPHyXEX+fOzZOraKGMi7IhQiPMrLBhRDCx7Y0Ec+r5EaB3/5a2oYTY5ZHgP0a3w0e
+3Wwr4DMs9qBOca+ltIOJ2gDLtQJC92oGg5PcHQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -236,4 +247,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_678ca0b7-1354-4562-a3ec-a46f2ecbc529" Target="#_53849232-861b-42de-ba25-73ca6d06b4c4"><Timestamp>2020-06-05 06:28:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6acdcc1e-18bc-4a1a-ad27-823456b384d7" Target="#_0ad17f44-46fc-4f66-a8b7-3690627aa7c9"><Timestamp>2020-06-05 06:31:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
