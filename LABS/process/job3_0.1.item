@@ -144,7 +144,54 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_2"/>
   </node>
+  <node componentName="tPigStoreResult" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPigStoreResult_1"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="PIG" value=""/>
+    <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
+    <elementParameter field="TEXT" name="OUTPUT_FILENAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="S3_BUCKET" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="S3_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="S3_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="CHECK" name="RM_OUTPUT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="STORE" value="PigStorage"/>
+    <elementParameter field="TEXT" name="CUSTOM_STORER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELD_SEPARATOR_CHAR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="THRIFT_SERVER" show="false" value="&quot;thrift://localhost:9083&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE_NAME" show="false" value="&quot;default&quot;"/>
+    <elementParameter field="TEXT" name="TABLE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PARTITION_KEYVALUE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="HBASE_VERSION" show="false" value="EMR_5_8_0"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="PIGOUTPUT" show="false" value=""/>
+    <elementParameter field="TABLE" name="CUSTOM_JARS" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="ASSOCIATED_PIG_LOAD" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="PARQUET_COMPRESSION" show="false" value="UNCOMPRESSED"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_CLIENT_PORT" show="false" value="&quot;2181&quot;"/>
+    <elementParameter field="CHECK" name="SET_ZNODE_PARENT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ZNODE_PARENT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HBASE_TABLE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COLUMN_LIST" name="ROWKEY_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="CONTAIN_ROW_KEY_COLUMN_IN_HBASE_COLUMN" show="false" value="false"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" show="false" value=""/>
+    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" show="false" value=""/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="CHECK" name="DEFINE_REGISTER_JAR" show="false" value="false"/>
+    <elementParameter field="LABEL" name="REGISTER_JAR_NOTE" show="false" value="When filling in the Jar path information below, make sure that the JAR files are available on the execution server.&#10;&#9;&#9;&#9;"/>
+    <elementParameter field="TABLE" name="REGISTER_JAR" show="false"/>
+    <elementParameter field="TABLE" name="HBASESTORAGE_PARAMETER" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPigStoreResult_1"/>
+    <metadata connector="REGISTERJAR" name="REGISTERJAR">
+      <column defaultValue="" key="false" length="255" name="datanucleus-core" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="datanucleus-rdbms" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="hcatalog" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="hive-exec" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="hive-metastore" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
@@ -154,13 +201,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9e7b07ba-2ed2-4e3e-82d3-ba50e0958ccc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4PX1ejkrN2H0aOo3xGgAbANgwKH47fAXwqPCvNRsuvF00duhwI4Ax/8VzmgqNMRM4SO17cuN9kqz
-3/Mh7dLSOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_14870ebd-c05d-4e6e-a614-e3ce3306202f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>h1gK2Y8JBBtQatulgXTqZMlxjRjD4OHCbS3c2bqOsBPwL/A9JPKzaNXldoA2QC6gFvxcR2n0cySt
-HfmJ4ZOzzQ==</DigestValue></Reference></SignedInfo><SignatureValue>1ucmjrIjlWrZ9J2d3MmjRiYNB8QvptWQN8MxOVwE4dZLIKu3NHUmxe3I/Ansv2kKnitVfRNxGYIW
-BxDW60tjb6SuJlEhvUIbbLtEDWFFYhYM0Emqz/ustjbB58NtrVa+5G/8ejJi26EOUmC0eIOorVcN
-GVa8HfBa6kbLxrkQ4IElnKH4GFRCjx0rPJgZqBDSQrTqAr8eBRPfIGhIV029ZrlOEwYjKecjVHjj
-6XXhPEZOR2m9MejlRA4bRr2K+r7F+8NSZ+lTSDNTWlbGm7vzfKWHDX2vf2cF/US38EF896cN5Z4K
-P5B8eg2RfbPsr7X6jJgLStYp6eAvDGjUBZN8Vw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPigStoreResult_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_53849232-861b-42de-ba25-73ca6d06b4c4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G6J+J9drGdtVTuPlDoTlGs4b6lHdyNhplLBrK2lHeIvC7rgxWZN2yCHDTNyJ70iY06Ag/OLhjhau
+CBzdBCNnLQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_678ca0b7-1354-4562-a3ec-a46f2ecbc529"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>d9TnuANIP0wjY0Z0/zRGPgA4Q1CtT+mro0iXktkmSdNpyRsSDiWXFvVxl2aQ+5gTk3ykZSKn7Wxw
+zMPDKym7Rw==</DigestValue></Reference></SignedInfo><SignatureValue>PKvQwWdaeJWp8kSKzwKU3NWIA/wQJGsQ1HA/DMHnZWalhjvsARSYkOHkprMIGNgXUs8EM6RO8ey6
+mtPaK+8RjERTBrgHoUn8b551iS90YitF2tjseKYP3Us366KccDLUDXZ6hMgmgvBX82+Uu3qQQi6s
+S/Soh26X+v9Q5jYX8DdM7JfYXhcVQ12LEuLn7e98GqIb88NE9Ru8yyCIzqdT6WYff9FLUTOHtqNw
+y222/EBvRFhIW9gOf3pqB4J4HOzdSyeJXQDi5lM7K4oBJVJ1frF9sh+Jsx1QBZIrM8lH0PU6dA08
+xMV44qrgdPr8AUNSPQfHvUpDSGs4Zxci1UjuCg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -184,4 +236,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_14870ebd-c05d-4e6e-a614-e3ce3306202f" Target="#_9e7b07ba-2ed2-4e3e-82d3-ba50e0958ccc"><Timestamp>2020-06-05 06:15:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_678ca0b7-1354-4562-a3ec-a46f2ecbc529" Target="#_53849232-861b-42de-ba25-73ca6d06b4c4"><Timestamp>2020-06-05 06:28:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
